@@ -48,7 +48,7 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid blue;
+  /*outline: 2px solid blue;*/
 }
 
 /*-------- HEADER ---------*/
@@ -94,7 +94,7 @@ main {
 }
 .main-container {
   height: 680px;
-  border: 4px dotted aqua;
+  /* border: 4px dotted aqua;*/
 }
 .first {
 }
