@@ -163,7 +163,7 @@ input:focus::placeholder {
   list-style: none;
   align-items: flex-end;
   /*проміжок між Формою і тваринками*/
-  padding-top: 35px;
+  padding-top: 40px;
 }
 .animal-item {
   padding: 20px;
