@@ -25,7 +25,12 @@ ul {
 a {
   text-decoration: none;
 }
-
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400px;
@@ -54,7 +59,7 @@ body {
 /*-------- HEADER ---------*/
 
 .header {
-  height: 300px;
+  height: 60px;
 }
 .header-container {
   display: flex;
@@ -88,28 +93,48 @@ body {
   color: #0000ff;
   transform: skewX(-20deg);
 }
-/*----- section BUTERFLY -----*/
+/*----- FORM -----*/
 main {
   flex-grow: 1;
 }
 .main-container {
-  height: 680px;
-  /* border: 4px dotted aqua;*/
 }
 .first {
 }
-.first-text {
-  margin-bottom: 300px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  max-width: 300px;
 }
-.buterfly-image {
+.form-label {
+  display: flex;
+  flex-direction: column;
 }
-
+.form-input {
+  padding: 4px;
+  color: #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+}
+.form-button {
+  background-color: #87ceeb;
+  border: 1px solid #212121;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+/*-------Animals-------------*/
 .animal-list {
   display: flex;
-  gap: 200px;
+  gap: 60px;
   list-style: none;
-
-  padding-right: 20px;
+  align-items: flex-end;
+  /*проміжок між Формою і тваринками*/
+  padding-top: 60px;
 }
 .animal-item {
 }
@@ -120,8 +145,8 @@ main {
 .animal-item:first-child:hover,
 .animal-item:first-child:focus {
   transform: rotate(360deg);
-  /*transform: translateX(150px);*/
 }
+
 .two,
 .three {
   transition: transform 1500ms ease-in-out;
@@ -134,18 +159,23 @@ main {
 .three:focus {
   transform: scale(70%, 70%);
 }
-.four {
+.four,
+five {
   transition: transform 500ms ease-in-out;
 }
 .four:hover,
 .four:focus {
-  transform: translate(180px, 20px);
+  transform: translateY(-400px);
 }
 
-.five {
+.five:hover,
+.five:focus {
+  transform: translate(180px, 20px);
+}
+.six {
   position: relative;
-  width: 200px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -156,7 +186,8 @@ main {
   left: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(90%);
+
+  transform: translateX(87%);
   transition: transform 650ms linear;
 }
 
