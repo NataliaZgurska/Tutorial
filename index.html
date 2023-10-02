@@ -13,7 +13,7 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link href="./css/styles.css" rel="stylesheet" />
-    <title>Document title</title>
+    <title>Animals</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -22,7 +22,7 @@
       <section class="header">
         <div class="container header-container">
           <h1 class="header-logo">
-            Тренажер <span class="header-span">HTML і CSS</span>
+            Тренажер <span class="header-span">HTML & CSS</span>
           </h1>
           <p class="header-text">Пробуйте!</p>
         </div>
@@ -32,17 +32,38 @@
     <main>
       <div class="container main-container">
         <section class="first">
-          <form class="form" name="form-first">
-            <label class="form-label">
-              Придумай назву
-              <input class="form-input" type="text" name="title" />
-            </label>
-            <label class="form-label">
-              Кого лякає крокодил?
-              <input class="form-input" type="text" name="the-best" />
-            </label>
-            <button class="form-button" type="submit">Submit feedback</button>
-          </form>
+
+          <div class="different-forms-container">
+
+      <div class="form-first-container">
+              <form class="form" name="form-first">
+                <label class="form-label">
+                  Придумай назву
+                  <input class="form-input" type="text" name="title" />
+                </label>
+                <label class="form-label">
+                  Кого лякає крокодил?
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="the-best"
+                    placeholder="кота?"
+                  />
+                </label>
+                <button class="form-button" type="submit">Submit feedback</button>
+               
+      </div> 
+            <div class="form-second-container">
+              </form>
+                 <form class="form" name="form-second">
+                <label class="form-label">
+                  Email address
+                  <input type="text" name="email-address" placeholder="aaaaaa@gmail.com" />
+                </label>
+                <button class="form-button" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
 
           <!--  ANIMALS-->
           <ul class="animal-list">

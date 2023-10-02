@@ -101,6 +101,15 @@ main {
 }
 .first {
 }
+.different-forms-container {
+  display: flex;
+  gap: 20px;
+}
+.form-first-container,
+.form-second-container {
+  width: 300px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -125,7 +134,18 @@ main {
   background-color: #87ceeb;
   border: 1px solid #212121;
   border-radius: 8px;
+  margin: 0 auto;
   margin-top: 10px;
+  max-width: 200px;
+}
+input::placeholder {
+  color: #c71585;
+  font-weight: 300;
+}
+
+input:hover::placeholder,
+input:focus::placeholder {
+  color: teal;
 }
 /*-------Animals-------------*/
 .animal-list {
