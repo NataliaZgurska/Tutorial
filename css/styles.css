@@ -120,9 +120,18 @@ main {
   border-radius: 4px;
   max-width: 300px;
 }
+
+.form:focus-within {
+  border-color: bisque;
+  box-shadow: 3px 3px 4px -2px bisque;
+}
+
 .form-label {
   display: flex;
   flex-direction: column;
+}
+.form-label:focus-within {
+  color: yellow;
 }
 .form-input {
   padding: 4px;
@@ -150,13 +159,14 @@ input:focus::placeholder {
 /*-------Animals-------------*/
 .animal-list {
   display: flex;
-  gap: 60px;
+  gap: 30px;
   list-style: none;
   align-items: flex-end;
   /*проміжок між Формою і тваринками*/
-  padding-top: 60px;
+  padding-top: 35px;
 }
 .animal-item {
+  padding: 20px;
 }
 
 .animal-item:first-child {
@@ -165,6 +175,7 @@ input:focus::placeholder {
 .animal-item:first-child:hover,
 .animal-item:first-child:focus {
   transform: rotate(360deg);
+  /* box-shadow: 0px 1px bisque;*/
 }
 
 .two,
