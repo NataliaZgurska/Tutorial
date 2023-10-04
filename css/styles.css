@@ -167,8 +167,9 @@ textarea {
   resize: none;
   margin-top: 10px;
 }
-/*.quiz-text {
-  margin: 8px 0;
+/*input[type="radio"] {
+  font-family: "Open Sans", sans-serif;
+  color: black;
 }*/
 /*-------Animals-------------*/
 .animal-list {
