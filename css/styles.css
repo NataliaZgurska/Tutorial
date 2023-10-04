@@ -105,10 +105,11 @@ main {
   display: flex;
   gap: 20px;
 }
+
 .form-first-container,
 .form-second-container,
 .form-third-container {
-  width: 300px;
+  width: 400px;
 }
 
 .form {
@@ -119,7 +120,7 @@ main {
   padding: 8px;
   border: 1px solid #212121;
   border-radius: 4px;
-  max-width: 300px;
+  max-width: 400px;
   transition: border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
 }
 .form-second-container {
@@ -164,7 +165,11 @@ input:focus::placeholder {
 }
 textarea {
   resize: none;
+  margin-top: 10px;
 }
+/*.quiz-text {
+  margin: 8px 0;
+}*/
 /*-------Animals-------------*/
 .animal-list {
   display: flex;

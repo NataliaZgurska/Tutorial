@@ -32,14 +32,17 @@
     <main>
       <div class="container main-container">
         <section class="first">
-
-        <div class="different-forms-container">
-
-          <div class="form-first-container">
+          <div class="different-forms-container">
+            <div class="form-first-container">
               <form class="form" name="form-first">
                 <label class="form-label">
                   Придумай назву
-                  <input class="form-input" type="text" name="title" autofocus />
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="title"
+                    autofocus
+                  />
                 </label>
                 <label class="form-label">
                   Кого лякає крокодил?
@@ -50,35 +53,55 @@
                     placeholder="кота?"
                   />
                 </label>
-                <button class="form-button" type="submit">Submit feedback</button>
-               
-            </div> 
-
-            <div class="form-second-container form">
-        
-              <label for="the-best">Хто найкращий:</label>
-<select id="the-best" name="the-best">
-  <option value="dog">Песик</option>
-  <option value="jiraffe">Жираф</option>
-  <option value="tushkan" selected>Тушканчик</option>
-  <option value="buterfly">Метелик</option>
-  <option value="crocodile" selected>Крокодил</option>
-  <option value="cat">Котик</option>
-</select>
+                <button class="form-button" type="submit">Зберегти</button>
               </form>
-          </div>
+            </div>
+
+            <div class="form-second-container">
+              <form class="form" name="form-second">
+                <label for="the-best">Хто найкращий:</label>
+
+                <select id="the-best" name="the-best">
+                  <option value="jiraffe">Жираф</option>
+                  <option value="tushkan" selected>Тушканчик</option>
+                  <option value="dog">Песик</option>
+                  <option value="buterfly">Метелик</option>
+                  <option value="crocodile" selected>Крокодил</option>
+                  <option value="cat">Котик</option>
+                </select>
+
+                <div class="quiz-container">
+                  <p class="quiz-text">Хто стрибає вище всіх?</p>
+                  <label>
+                    <input type="radio" name="answer" value="tushkan" />
+                    Тушканчик
+                  </label>
+                  <label>
+                    <input type="radio" name="answer" value="buterfly" />
+                    Метелик
+                  </label>
+                  <label>
+                    <input type="radio" name="answer" value="cat" />
+                    Котик
+                  </label>
+                </div>
+                <button class="form-button" type="submit">Зберегти</button>
+              </form>
+            </div>
             <div class="form-third-container">
-              <form>
-                 <form class="form" name="form-second">
+              <form class="form" name="form-third">
                 <label class="form-label">
                   Ваші враження
-                  <textarea name="impression" rows="5" placeholder="напишіть про ваші враження"></textarea>
+                  <textarea
+                    name="impression"
+                    rows="4"
+                    placeholder="напишіть про ваші враження"
+                  ></textarea>
                 </label>
                 <button class="form-button" type="submit">Send</button>
               </form>
             </div>
-
-                   </div>
+          </div>
 
           <!--  ANIMALS-->
           <ul class="animal-list">
