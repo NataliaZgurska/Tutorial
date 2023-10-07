@@ -21,6 +21,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -49,17 +50,19 @@ body {
   background-size: cover;
 }
 /*font-family: 'Indie Flower', cursive;*/
+/*
 .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  /*outline: 2px solid blue;*/
-}
+  outline: 2px solid blue;
+}*/
 
 /*-------- HEADER ---------*/
 
 .header {
-  height: 60px;
+  height: 40px;
+  width: 100%;
 }
 .header-container {
   display: flex;
@@ -94,14 +97,19 @@ body {
   transform: skewX(-20deg);
 }
 /*----- FORM -----*/
+/*
 main {
   flex-grow: 1;
+}*/
+main {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-.main-container {
-}
-.first {
-}
+
 .different-forms-container {
+  height: 180px;
+  border: 2px solid red;
   display: flex;
   gap: 20px;
 }
@@ -167,91 +175,107 @@ textarea {
   resize: none;
   margin-top: 10px;
 }
-/*input[type="radio"] {
-  font-family: "Open Sans", sans-serif;
-  color: black;
-}*/
+
 /*-------Animals-------------*/
-
-/*
-.modal {
+.animals-container {
+  position: relative;
+  height: 370px;
+  border: 3px solid blue;
+}
+.visually-hidden {
   position: absolute;
-  top: 50%;
-  left: 50%;
-    transform: translate(-50%, -50%);
-}*/
-
-.animal-list {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  align-items: flex-end;
-  /*проміжок між Формою і тваринками*/
-  padding-top: 40px;
-}
-.animal-item {
-  padding: 20px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.animal-item:first-child {
+.one {
+  position: absolute;
+  top: 230px;
+  left: 16px;
   transition: transform 500ms ease-in-out;
 }
-.animal-item:first-child:hover,
-.animal-item:first-child:focus {
+
+.one:hover,
+.one:focus {
   transform: rotate(360deg);
-  /* box-shadow: 0px 1px bisque;*/
 }
 
-.two,
-.three {
-  transition: transform 1500ms ease-in-out;
+.two {
+  position: absolute;
+  top: 0;
+  left: 215px;
 }
 .two:hover,
 .two:focus {
   transform: scale(150%, 150%);
 }
+.three {
+  position: absolute;
+  top: 215px;
+  left: 500px;
+}
+.two,
+.three {
+  transition: transform 1500ms ease-in-out;
+}
 .three:hover,
 .three:focus {
   transform: scale(70%, 70%);
 }
-.four,
-five {
-  transition: transform 500ms ease-in-out;
+
+.four {
+  position: absolute;
+  top: 87px;
+  left: 622px;
+}
+.four {
+  transition: transform 400ms linear;
 }
 .four:hover,
 .four:focus {
-  transform: translateY(-400px);
+  transform: translateY(-280px);
 }
-
+.five {
+  position: absolute;
+  top: 190px;
+  left: 680px;
+}
+.five {
+  transition: transform 500ms ease-in-out;
+}
 .five:hover,
 .five:focus {
   transform: translate(180px, 20px);
 }
+
 .six {
+  position: absolute;
+  top: 250px;
+  left: 1200px;
+}
+/*
+.cat {
   position: relative;
-  width: 100px;
+  top: 250px;
+  left: 1000px;
+  width: 90px;
   height: 100px;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.cat {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-
-  transform: translateX(87%);
+ transform: translateX(0);
   transition: transform 650ms linear;
 }
 
 .cat:hover {
-  transform: translateX(0);
-}
-
-.animal-image {
-}
+  transform: translateX(87%);
+}*/
 
 /*--------- FOOTER--------*/
 .footer {
