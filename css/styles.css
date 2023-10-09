@@ -85,24 +85,24 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #f4f4fd;
+  font-family: "Indie Flower", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: white;
   transform: skewX(-20deg);
 }
 
 .header-btn {
   min-width: 140px;
   height: 40px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #f4f4fd;
+  font-family: "Indie Flower", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: white;
   cursor: pointer;
   background-color: #4d5ae5;
   border-radius: 8px;
@@ -124,7 +124,7 @@ main {
 .animals-container {
   position: relative;
   height: 530px;
-  /*border: 3px solid blue;*/
+  /* border: 3px solid blue;*/
   padding-bottom: 5px;
 }
 .visually-hidden {
@@ -144,7 +144,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
 }
 
@@ -194,9 +194,9 @@ main {
 
 .six {
   position: relative;
-  width: 90px;
+  width: 100px;
   height: 80px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   overflow: hidden;
 }
 .cat {
