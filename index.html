@@ -24,7 +24,10 @@
           <h1 class="header-logo">
             Тренажер <span class="header-span">HTML & CSS</span>
           </h1>
-          <p class="header-text">Пробуйте!</p>
+          <div class="header-btn-container">
+            <p class="header-text">Пограйся з тваринками і</p>
+            <button type="button" class="header-btn">Переходь сюди</button>
+          </div>
         </div>
       </section>
     </header>
@@ -65,15 +68,6 @@
           </li>
           <li class="animal-item four">
             <img
-              class="animal-image buterfly"
-              src="./images/buterfly.png"
-              alt="buterfly"
-              width="50"
-              height="50"
-            />
-          </li>
-          <li class="animal-item five">
-            <img
               class="animal-image"
               src="./images/crocodile.png"
               alt="crocodile"
@@ -81,6 +75,16 @@
               height="220"
             />
           </li>
+          <li class="animal-item five">
+            <img
+              class="animal-image buterfly"
+              src="./images/buterfly.png"
+              alt="buterfly"
+              width="50"
+              height="50"
+            />
+          </li>
+
           <li class="animal-item six">
             <img
               class="animal-image cat"
@@ -104,8 +108,9 @@
         </div>
       </section>
     </footer>
-    <!--Modal window-->
-    <div class="backdrop is-open">
+
+    <!--Modal window is-open -->
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="10" height="10">
@@ -139,9 +144,9 @@
             <div class="input-wrap">
               <input
                 type="tel"
-                name="user--ask"
+                name="user-ask"
                 class="modal-input"
-                id="user--ask"
+                id="user-ask"
                 placeholder="Кота?"
               />
               <svg class="modal-icon" width="15" height="15">

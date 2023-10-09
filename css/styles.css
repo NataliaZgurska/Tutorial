@@ -41,28 +41,22 @@ body {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
-      rgba(67, 47, 100, 0.5),
-      rgba(58, 46, 66, 0.5)
+      rgba(67, 47, 100, 0.4),
+      rgba(58, 46, 66, 0.3)
     ),
-    url(../images/bg-img.jpg);
+    url(../images/bg-forest.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 /*font-family: 'Indie Flower', cursive;*/
-/*
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-  outline: 2px solid blue;
-}*/
 
 /*-------- HEADER ---------*/
 
 .header {
   height: 40px;
   width: 100%;
+  padding: 0 15px;
 }
 .header-container {
   display: flex;
@@ -75,7 +69,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4b0082;
+  color: #0000ff;
 }
 .header-span {
   font-family: "Indie Flower", cursive;
@@ -87,14 +81,38 @@ body {
   color: yellow;
 }
 
-.header-text {
-  font-family: "Indie Flower", cursive;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #0000ff;
+.header-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #f4f4fd;
   transform: skewX(-20deg);
+}
+
+.header-btn {
+  min-width: 140px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #f4f4fd;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border-radius: 8px;
+  border: none;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 /*-------Animals-------------*/
@@ -105,8 +123,9 @@ main {
 }
 .animals-container {
   position: relative;
-  height: 370px;
-  border: 3px solid blue;
+  height: 530px;
+  /*border: 3px solid blue;*/
+  padding-bottom: 5px;
 }
 .visually-hidden {
   position: absolute;
@@ -121,11 +140,16 @@ main {
   overflow: hidden;
 }
 
+.animal-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+}
+
 .one {
-  position: absolute;
-  top: 230px;
-  left: 16px;
-  transition: transform 500ms ease-in-out;
+  transition: transform 400ms ease-in-out;
 }
 
 .one:hover,
@@ -134,21 +158,16 @@ main {
 }
 
 .two {
-  position: absolute;
-  top: 0;
-  left: 215px;
+  padding-bottom: 50px;
+  transition: transform 1500ms ease-in-out;
 }
 .two:hover,
 .two:focus {
   transform: scale(150%, 150%);
 }
+
 .three {
-  position: absolute;
-  top: 215px;
-  left: 500px;
-}
-.two,
-.three {
+  padding-bottom: 100px;
   transition: transform 1500ms ease-in-out;
 }
 .three:hover,
@@ -157,51 +176,42 @@ main {
 }
 
 .four {
-  position: absolute;
-  top: 87px;
-  left: 622px;
-}
-.four {
-  transition: transform 400ms linear;
+  transition: transform 500ms ease-in-out;
 }
 .four:hover,
 .four:focus {
-  transform: translateY(-280px);
-}
-.five {
-  position: absolute;
-  top: 190px;
-  left: 680px;
-}
-.five {
-  transition: transform 500ms ease-in-out;
-}
-.five:hover,
-.five:focus {
   transform: translate(180px, 20px);
 }
 
-.six {
-  position: absolute;
-  top: 250px;
-  left: 1200px;
+.five {
+  padding-bottom: 110px;
+  transition: transform 400ms linear;
 }
-/*
-.cat {
+.five:hover,
+.five:focus {
+  transform: translateY(-400px);
+}
+
+.six {
   position: relative;
-  top: 250px;
-  left: 1000px;
   width: 90px;
-  height: 100px;
+  height: 80px;
   margin: 0 auto;
   overflow: hidden;
- transform: translateX(0);
+}
+.cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(89%);
   transition: transform 650ms linear;
 }
 
-.cat:hover {
-  transform: translateX(87%);
-}*/
+.six:hover .cat {
+  transform: translateX(0);
+}
 
 /*--------- FOOTER--------*/
 .footer {
@@ -230,11 +240,13 @@ main {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -268,12 +280,13 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #000080;
+  background-color: #404bbf;
   border: none;
 }
 
@@ -284,6 +297,7 @@ main {
 .modal-close-btn:focus .modal-close-icon {
   fill: #ffffff;
 }
+/******************************/
 .modal-title {
   font-size: 16px;
   font-weight: 500;
@@ -291,7 +305,7 @@ main {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 16px;
-  color: #000080;
+  color: #404bbf;
 }
 
 /*---- Forms --------*/
@@ -313,7 +327,7 @@ main {
 }
 
 .modal-label:hover {
-  color: #000080;
+  color: #404bbf;
 }
 .modal-icon {
   position: absolute;
@@ -337,19 +351,13 @@ main {
 }
 
 .modal-input:focus {
-  border-color: #000080;
+  border-color: #404bbf;
 }
-.modal-input:focus + .modal-label {
-  color: #000080;
-}
+
 .modal-input:focus + .modal-icon {
-  fill: #000080;
+  fill: #404bbf;
 }
-
-.modal-form-btn {
-  margin: 0 auto;
-}
-
+/*********************************/
 .checkbox-container {
   margin-top: 36px;
   margin-bottom: 24px;
@@ -361,7 +369,7 @@ main {
   color: #8e8f99;
 }
 .check-text a {
-  color: #000080;
+  color: #404bbf;
   text-decoration-line: underline;
 }
 .check-text-box {
@@ -379,7 +387,7 @@ main {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-check:checked + .check-text > .check-text-box {
-  background-color: #000080;
+  background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
@@ -389,6 +397,7 @@ main {
   height: 40px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -397,9 +406,11 @@ main {
   letter-spacing: 0.04em;
   color: #f4f4fd;
   cursor: pointer;
-  background-color: #2f4f4f;
-  border-radius: 4px;
+  background-color: #4d5ae5;
+  border-radius: 8px;
   border: none;
+  transform: skewX(-20deg);
+  padding-left: 10px;
 }
 
 .modal-btn-icon {
@@ -407,5 +418,5 @@ main {
   fill: #f4f4fd;
 }
 .modal-form-btn:hover {
-  background-color: #000080;
+  background-color: #404bbf;
 }
