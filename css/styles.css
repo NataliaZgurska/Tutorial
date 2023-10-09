@@ -117,6 +117,7 @@ body {
 
 /*-------Animals-------------*/
 main {
+  flex-grow: 1;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -167,7 +168,7 @@ main {
 }
 
 .three {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   transition: transform 1500ms ease-in-out;
 }
 .three:hover,
