@@ -37,9 +37,7 @@ body {
   font-weight: 400px;
   background-color: gray;
   color: bisque;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
   background-image: linear-gradient(
       rgba(67, 47, 100, 0.4),
       rgba(58, 46, 66, 0.3)
@@ -50,17 +48,23 @@ body {
   background-size: cover;
 }
 /*font-family: 'Indie Flower', cursive;*/
-
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*-------- HEADER ---------*/
 
 .header {
   height: 40px;
   width: 100%;
-  padding: 0 15px;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
+  border: 2px solid red;
 }
 
 .header-logo {
@@ -119,14 +123,13 @@ body {
 main {
   flex-grow: 1;
   width: 100%;
-  padding: 0 15px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 .animals-container {
   position: relative;
-  height: 530px;
-  /* border: 3px solid blue;*/
-  padding-bottom: 5px;
+  height: 100%;
+  border: 3px solid blue;
 }
 .visually-hidden {
   position: absolute;
@@ -159,7 +162,7 @@ main {
 }
 
 .two {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   transition: transform 1500ms ease-in-out;
 }
 .two:hover,
@@ -168,7 +171,7 @@ main {
 }
 
 .three {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   transition: transform 1500ms ease-in-out;
 }
 .three:hover,
