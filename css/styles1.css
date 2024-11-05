@@ -3,14 +3,60 @@
   margin: 0;
 }
 
-body {
-  background-color: azure;
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-p {
+a:link {
+  color: blue;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+a:active {
+  color: yellow;
+  text-decoration: none;
+  background-color: lightblue;
+}
+
+a:visited {
+  color: purple;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+body {
+  background-color: azure;
+  padding: 10px;
+  /* height: 100vh; */
+}
+
+header {
+  background-color: #e5e5e5;
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  background-color: #e5e5e5;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+}
+
+/* p {
   color: blue;
   background-color: aliceblue;
-}
+} */
 
 h3 {
   font-size: 2vw;
@@ -19,9 +65,8 @@ h3 {
 }
 
 .responsiveDivs {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  border: 5px solid red;
   overflow: auto;
 }
 
@@ -29,20 +74,31 @@ h3 {
 .div2,
 .div3 {
   float: left;
-  /* padding: 20px; */
+  padding: 5px;
 }
 
 .div1 {
-  background-color: blue;
   width: 100%;
 }
 .div2 {
-  background-color: yellow;
   width: 100%;
 }
 .div3 {
-  background-color: green;
+  background-color: #e5e5e5;
+  float: left;
   width: 100%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.linksListItem {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
 }
 
 @media only screen and (min-width: 500px) {
