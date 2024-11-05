@@ -101,6 +101,24 @@ h3 {
   color: black;
 }
 
+/* asideDiv */
+.asideDiv {
+  overflow: auto;
+  border: 2px solid gray;
+  padding: 10px;
+}
+.asideDivMainText {
+  color: darkslategray;
+}
+aside {
+  width: 100%;
+  font-style: italic;
+  background-color: rgba(211, 211, 211, 0.4);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/*   tablet    */
 @media only screen and (min-width: 500px) {
   .div1 {
     width: 20%;
@@ -108,8 +126,15 @@ h3 {
   .div2 {
     width: 80%;
   }
+  aside {
+    width: 30%;
+    float: right;
+    margin-top: 0;
+    padding: 0 10px;
+  }
 }
 
+/*    desctop    */
 @media only screen and (min-width: 800px) {
   .div2 {
     width: 60%;
